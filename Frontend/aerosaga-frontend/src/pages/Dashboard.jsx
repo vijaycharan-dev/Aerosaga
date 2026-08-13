@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import DroneCard from "../components/DroneCard";
 import MissionStatus from "../components/MissionStatus";
+import TelemetryPanel from "../components/TelemetryPanel";
 
 function Dashboard() {
   return (
@@ -28,6 +29,7 @@ function Dashboard() {
           battery={78}
           altitude={120}
         />
+        <TelemetryPanel />
       </main>
     </div>
   );
