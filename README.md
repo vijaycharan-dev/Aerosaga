@@ -47,85 +47,52 @@ Telemetry                   |
 
 5. Technologies Used
 
-Technology
-
-Purpose
-
-Java
-
-Backend programming
-
-Spring Boot
-
-Backend/application development
-
-React
-
-Frontend UI
-
-WebSocket
-
-Real-time telemetry
-
-Temporal
-
-Durable workflow orchestration
-
-Saga Pattern
-
-Business-level compensation
-
-PostgreSQL
-
-Temporal persistence
-
-Docker
-
-Infrastructure/containerization
-
-Maven
-
-Build and dependency management
-
-Git/GitHub
-
-Version control and collaboration
-
-Temporal UI
-
-Workflow monitoring
+      Technology
+      Purpose
+      Java
+      Backend programming
+      Spring Boot
+      Backend/application development
+      React
+      Frontend UI
+      WebSocket
+      Real-time telemetry
+      Temporal
+      Durable workflow orchestration
+      Saga Pattern
+      Business-level compensation
+      PostgreSQL
+      Temporal persistence
+      Docker
+      Infrastructure/containerization
+      Maven
+      Build and dependency management
+      Git/GitHub
+      Version control and collaboration
+      Temporal UI
+      Workflow monitoring
 
 6. Why These Technologies?
 
-Java: Enterprise-ready backend platform with strong ecosystem support.
-
-Spring Boot: Simplifies backend and API development.
-
-React: Component-based interactive frontend.
-
-WebSocket: Pushes frequently changing telemetry without repeated polling.
-
-Temporal: Provides durable workflows, activity execution, retries, and history.
-
-Saga: Provides business-level compensation after partial failure.
-
-PostgreSQL: Supports Temporal persistence.
-
-Docker: Gives the team consistent local infrastructure.
-
-Git/GitHub: Supports branches, commits, Pull Requests, and collaboration.
+      Java: Enterprise-ready backend platform with strong ecosystem support.
+      Spring Boot: Simplifies backend and API development.
+      React: Component-based interactive frontend.
+      WebSocket: Pushes frequently changing telemetry without repeated polling.
+      Temporal: Provides durable workflows, activity execution, retries, and history.
+      Saga: Provides business-level compensation after partial failure.
+      PostgreSQL: Supports Temporal persistence.
+      Docker: Gives the team consistent local infrastructure.
+      Git/GitHub: Supports branches, commits, Pull Requests, and collaboration.
 
 7. Frontend
 
-The React frontend provides the user interface, mission information, telemetry display, and real-time updates received through the backend/WebSocket layer.
+      The React frontend provides the user interface, mission information, telemetry display, and real-time updates received through the backend/WebSocket layer.
 
 8. Backend
 
-The backend uses Java and Spring Boot for application services, APIs, WebSocket communication, and integration with Temporal.
-
-Temporal source location:
-
-Backend/backend/src/main/java/com/infotact/aerosaga/temporal/
+      The backend uses Java and Spring Boot for application services, APIs, WebSocket communication, and integration with Temporal.
+      Temporal source location:
+            Backend/backend/src/main/java/com/infotact/aerosaga/temporal/
 
 9. WebSocket Telemetry
 
