@@ -17,6 +17,8 @@ public class DroneMissionActivitiesImpl implements DroneMissionActivities {
     public void launchDrone(String missionId) {
         log.info("Launching drone for mission: {}", missionId);
 
+        throw new RuntimeException("Simulated failure during drone launch for mission: " + missionId);
+
     
 }
 
