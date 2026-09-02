@@ -21,7 +21,7 @@ public class MissionWorkflowStarter {
         WorkflowClient client =
                 WorkflowClient.newInstance(service);
 
-        String missionId = "MISSION-006";
+        String missionId = "MISSION-003";
 
         DroneMissionWorkflow workflow =
                 client.newWorkflowStub(
