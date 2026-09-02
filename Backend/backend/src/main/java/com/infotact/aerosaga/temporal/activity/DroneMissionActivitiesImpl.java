@@ -17,14 +17,27 @@ public class DroneMissionActivitiesImpl implements DroneMissionActivities {
     public void launchDrone(String missionId) {
         log.info("Launching drone for mission: {}", missionId);
 
-        throw new RuntimeException("Simulated failure during drone launch for mission: " + missionId);
+        //throw new RuntimeException("Simulated failure during drone launch for mission: " + missionId);
+    }
 
-    
-}
+    @Override
+    public void reachStartPoint(String missionId) {
+        log.info("Drone reached start point for mission: {}", missionId);
+    }
+
+    @Override
+    public void reachMidPath(String missionId) {
+        log.info("Drone reached mid path for mission: {}", missionId);
+    }
+
+    @Override
+    public void reachDestination(String missionId) {
+        log.info("Drone reached destination for mission: {}", missionId);
+    }
 
     @Override
     public void completeMission(String missionId) {
-        log.info("Completing mission: {}", missionId);
+        log.info("Completing mission for mission: {}", missionId);
     }
 
     @Override
@@ -36,5 +49,4 @@ public class DroneMissionActivitiesImpl implements DroneMissionActivities {
     public void compensatePreparation(String missionId) {
         log.info("Compensating drone preparation for mission: {}", missionId);
     }
-    
 }

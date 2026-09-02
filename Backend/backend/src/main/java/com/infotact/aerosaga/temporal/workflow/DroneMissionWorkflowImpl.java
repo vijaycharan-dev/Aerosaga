@@ -48,6 +48,12 @@ public class DroneMissionWorkflowImpl implements DroneMissionWorkflow {
                     missionId
             );
 
+            activities.reachStartPoint(missionId);
+
+            activities.reachMidPath(missionId);
+
+            activities.reachDestination(missionId);
+
             activities.completeMission(missionId);
 
             return "Mission completed: " + missionId;

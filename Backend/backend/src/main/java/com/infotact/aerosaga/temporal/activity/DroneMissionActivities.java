@@ -13,6 +13,15 @@ public interface DroneMissionActivities {
     void launchDrone(String missionId);
 
     @ActivityMethod
+    void reachStartPoint(String missionId);
+
+    @ActivityMethod
+    void reachMidPath(String missionId);
+
+    @ActivityMethod
+    void reachDestination(String missionId);
+
+    @ActivityMethod
     void completeMission(String missionId);
 
     @ActivityMethod
