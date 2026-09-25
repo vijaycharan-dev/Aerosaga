@@ -17,7 +17,7 @@ function TelemetryPanel() {
       brokerURL: "ws://localhost:8080/ws",
 
       onConnect: () => {
-        console.log("Connected to WebSocket");
+        console.log("Telemetry connected to WebSocket");
 
         client.subscribe("/topic/telemetry", (message) => {
           const data = JSON.parse(message.body);
@@ -29,11 +29,11 @@ function TelemetryPanel() {
       },
 
       onWebSocketError: (error) => {
-        console.error("WebSocket error:", error);
+        console.error("Telemetry WebSocket error:", error);
       },
 
       onStompError: (frame) => {
-        console.error("STOMP error:", frame);
+        console.error("Telemetry STOMP error:", frame);
       },
     });
 
