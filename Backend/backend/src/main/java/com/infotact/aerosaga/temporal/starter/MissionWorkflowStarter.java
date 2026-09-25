@@ -7,6 +7,9 @@ import io.temporal.client.WorkflowOptions;
 import io.temporal.serviceclient.WorkflowServiceStubs;
 import io.temporal.serviceclient.WorkflowServiceStubsOptions;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class MissionWorkflowStarter {
 
     public static void main(String[] args) {
@@ -21,7 +24,11 @@ public class MissionWorkflowStarter {
         WorkflowClient client =
                 WorkflowClient.newInstance(service);
 
-        String missionId = "MISSION-003";
+        DateTimeFormatter formatter =
+                DateTimeFormatter.ofPattern("yyyyMMdd-HHmmss");
+
+        String missionId =
+                "MISSION-" + LocalDateTime.now().format(formatter);
 
         DroneMissionWorkflow workflow =
                 client.newWorkflowStub(

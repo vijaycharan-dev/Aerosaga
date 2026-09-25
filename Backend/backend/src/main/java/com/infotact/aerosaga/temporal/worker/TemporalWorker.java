@@ -1,6 +1,7 @@
 package com.infotact.aerosaga.temporal.worker;
 
 import com.infotact.aerosaga.temporal.activity.DroneMissionActivitiesImpl;
+import com.infotact.aerosaga.temporal.activity.MissionStatusActivityImpl;
 import com.infotact.aerosaga.temporal.workflow.DroneMissionWorkflowImpl;
 import io.temporal.client.WorkflowClient;
 import io.temporal.serviceclient.WorkflowServiceStubs;
@@ -32,7 +33,8 @@ public class TemporalWorker {
         );
 
         worker.registerActivitiesImplementations(
-                new DroneMissionActivitiesImpl()
+                new DroneMissionActivitiesImpl(),
+                new MissionStatusActivityImpl()
         );
 
         factory.start();
